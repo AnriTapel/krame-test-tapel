@@ -1,0 +1,3 @@
+<div class="card-list-container">
+    <app-card *ngFor="let card of cardsData$ | async" [cardData]="card" [selected]="isSelected(card.Id)" (cardClickEvent)="onCardClick($event)"></app-card>
+</div>

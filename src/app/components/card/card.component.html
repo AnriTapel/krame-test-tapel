@@ -1,0 +1,9 @@
+<div [ngClass]="{'card-block': true, 'card-block-selected': selected}">
+    <div [ngClass]="{'card-title-block': true ,'status-active': cardData.status}">
+        <span class="card-title">{{cardData.Name}}</span>
+    </div>
+    <div class="card-info-block">
+        <span class="resolution">{{cardData.NativeResolution}}</span>
+        <span class="size">{{cardData.Size}}</span>
+    </div>
+</div>
